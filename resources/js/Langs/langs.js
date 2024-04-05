@@ -1,3 +1,7 @@
+import translateTr from "./tr.json";
+import translateEn from "./en.json";
+
+
 export default function () {
     const langs = [
         {
@@ -8,7 +12,13 @@ export default function () {
         }
     ];
 
+    const translates = {
+        en: translateEn,
+        tr: translateTr,
+    };
+
     return {
         langs,
+        translates,
     };
 }

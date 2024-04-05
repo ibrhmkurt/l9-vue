@@ -2,8 +2,14 @@
 import { ref } from "vue";
 import { Head, Link } from '@inertiajs/vue3';
 import { useI18n } from "vue-i18n";
+import Langs from "../Langs/langs";
 
 const { t, locale } = useI18n();
+const { langs } = Langs();
+const changeLang = (lang) => {
+    locale.value = lang;
+    showLangs.value = false;
+};
 
 defineProps({
     canLogin: Boolean,
@@ -38,7 +44,16 @@ const showLangs = ref(false);
 
             <div class="relative text-slate-200">
                 <span @click="showLangs = true" v-text="$t('langs.'+locale)"></span>
-                <div v-if="showLangs" class="absolute flex">Langs</div>
+                <div v-if="showLangs" class="absolute flex flex-col">
+                <template v-for="l in langs">
+                    <span
+                        @click="changeLang(l.id)"
+                        class="p-2 border"
+                        v-if="locale !== l.id"
+                        v-text="$t('langs.'+l.id)"
+                    ></span>
+                </template>
+                </div>
             </div>
         </div>
 

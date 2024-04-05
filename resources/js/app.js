@@ -17,16 +17,15 @@ import "./sources/icons" // icons.js i import ediyoruz.
 // i18n
 
 import { createI18n } from "vue-i18n";
-import translateTr from "./Langs/tr.json";
-import translateEn from "./Langs/en.json";
+import Langs from "./Langs/langs";
+
 
 const i18n = createI18n({
     legacy: false, // you must specify 'legacy: false' option
     locale: 'tr', // set locale
     fallbackLocale: 'en', // set fallback locale
     messages: {
-        tr: translateTr, // set locale messages
-        en: translateEn, // set locale messages
+        ...Langs().translates,
     }
  });
 
