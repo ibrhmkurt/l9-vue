@@ -1,0 +1,10 @@
+{
+    "auth": {
+        "login": "Giriş Yap",
+        "register": "Kayıt Ol"
+    },
+    "langs": {
+        "tr": "Türkçe",
+        "en": "İngilizce"
+    }
+}
