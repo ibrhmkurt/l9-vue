@@ -6,5 +6,48 @@
     "langs": {
         "tr": "Türkçe",
         "en": "İngilizce"
+    },
+    "role": {
+        "admin": "Yöneticisin",
+        "moderator": "Moderatörsün"
+    },
+    "adminGreetings": "Hoşgeldiniz {name}, sen bir @:role.admin{'.'}",
+    "moderatorGreetings": "Hoşgeldiniz {name}, sen bir @:role.moderator{'.'}",
+    "item": "{count} adet ürün | {count} adet ürün",
+    "cart": {
+        "cartCount": "Sepetinizde {itemCount} var."
+    },
+    "car": "araba | arabalar",
+    "dateTimeFormats": {
+        "short": {
+            "year": "numeric",
+            "month": "short",
+            "day": "numeric"
+        },
+        "long": {
+            "year": "numeric",
+            "month": "short",
+            "day": "numeric",
+            "weekday": "short",
+            "hour": "numeric",
+            "minute": "numeric",
+            "hour12": false
+        }
+    },
+    "numberFormats": {
+        "currency": {
+            "style": "currency",
+            "currency": "TRY",
+            "notation": "standard"
+        },
+        "decimal": {
+            "style": "decimal",
+            "minimumFractionDigits": 2,
+            "maximumFractionDigits": 2
+        },
+        "percent": {
+            "style": "percent",
+            "useGrouping": false
+        }
     }
 }

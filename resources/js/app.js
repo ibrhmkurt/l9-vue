@@ -24,6 +24,14 @@ const i18n = createI18n({
     legacy: false, // you must specify 'legacy: false' option
     locale: 'tr', // set locale
     fallbackLocale: 'en', // set fallback locale
+    datetimeFormats: {
+        en: Langs().translates.en.dateTimeFormats,
+        tr: Langs().translates.tr.dateTimeFormats,
+    },
+    numberFormats: {
+        en: Langs().translates.en.numberFormats,
+        tr: Langs().translates.tr.numberFormats,
+    },
     messages: {
         ...Langs().translates,
     }

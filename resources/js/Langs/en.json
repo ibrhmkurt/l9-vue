@@ -6,5 +6,48 @@
     "langs": {
         "tr": "Türkçe",
         "en": "İngilizce"
+    },
+    "role": {
+        "admin": "Administrator",
+        "moderator": "Moderator"
+    },
+    "adminGreetings": "Welcome {name}, you're a @:role.admin{'.'}",
+    "moderatorGreetings": "Welcome {name}, you're a @:role.moderator{'.'}",
+    "item": "{count} item | {count} items",
+    "cart": {
+        "cartCount": "{itemCount} in cart."
+    },
+    "car": "car | cars",
+    "dateTimeFormats": {
+        "short": {
+            "year": "numeric",
+            "month": "short",
+            "day": "numeric"
+        },
+        "long": {
+            "year": "numeric",
+            "month": "short",
+            "day": "numeric",
+            "weekday": "short",
+            "hour": "numeric",
+            "minute": "numeric",
+            "hour12": true
+        }
+    },
+    "numberFormats": {
+        "currency": {
+            "style": "currency",
+            "currency": "USD",
+            "notation": "standard"
+        },
+        "decimal": {
+            "style": "decimal",
+            "minimumFractionDigits": 2,
+            "maximumFractionDigits": 2
+        },
+        "percent": {
+            "style": "percent",
+            "useGrouping": false
+        }
     }
 }
